@@ -69,6 +69,7 @@
 
 	<!--the links to the problems-->
 	<h2 id="current">Current Problems</h2>
+	<p id="time"></p>
 	<ol>
 		<li><a  target="_blank"href="./HTMLPage2.html">Level 1 Problems</a></li>
 		<li><a  target="_blank"href="./HTMLPage3.html">Level 2 Problems</a></li>
@@ -103,5 +104,38 @@
 	but they will still be worth an amount of points which may help you go up the leaderboard or at least not go down to the very bottom if you
 	do not do the problems in one of the week. The level 1 problems are worth 5 points in the week that they are the current probems,
 	the level 2 problems are worth 7, and the level 3 problems are worth 9 points.</p>
+	<script>
+		var timeEnd = new Date(2020, 5, 24, 0, 0, 0, 0);
+
+		setInterval(updateTime, 1000)
+
+		function updateTime()
+		{
+			timeEnd = timeEnd.getTime();
+			var timeCurrent = new Date();
+			timeCurrent = timeCurrent.getTime();
+			var timeRemaining = timeEnd - timeCurrent;
+			if (timeRemaining >= 86400000)
+			{
+				var timeDays = Math.floor(timeRemaining/86400000);
+				var timeHours = Math.round((timeRemaining - timeDays * 86400000)/3600000)
+			
+			}
+
+			else if (timeRemaining >= 3600000 && timeRemaining < 86400000)
+			{
+				var timeHours = Math.floor(timeRemaining/3600000);
+				var timeMinutes = Math.round((timeRemaining - timeHours * 3600000)/60000)
+			
+			}
+
+			if (timeRemaining >= 60000 && timeRemaining)
+			{
+				var timeMinutes = Math.floor(timeRemaining/86400000);
+				var timeSeconds = Math.round((timeRemaining - timeDays * 86400000)/3600000)
+			
+			}
+			}
+	</script>
 </body>
 </html>
