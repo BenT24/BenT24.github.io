@@ -136,8 +136,9 @@
 			else
 			{
 				var timeMinutes = Math.floor(timeRemaining/60000);
-				var timeSeconds = Math.round((timeRemaining - timeDays * 60000)/10000);
+				var timeSeconds = Math.round((timeRemaining - timeMinutes * 60000)/1000);
 				timeEl.innerHTML = timeMinutes + " Minutes " + timeSeconds + " Seconds";
+				console.log(timeSeconds);
 			}
 		}
 	</script>
