@@ -51,7 +51,7 @@
 			position:absolute;
 			top:100px;
 			left:800px;
-			height:700px;
+			height:800px;
 			overflow-y:auto;
 		}
 
@@ -59,10 +59,17 @@
 			color:turquoise;
 		}
 
+		#timeRemaining{
+			width:400px;
+			overflow-x:hidden;
+		}
+
 	</style>
 </head>
 <body>
+	<!--title-->
 	<h1 id="title">Problems Of The Week</h1>
+	<!--contents-->
 	<h2 id="contents">Contents</h2>
 	<ol>
 		<li><a href="#current">Current Problems</a></li>
@@ -73,20 +80,22 @@
 
 	<!--the links to the problems-->
 	<h2 id="current">Current Problems</h2>
-	<p id="timeRemaining"><span id="time"></span> Until<br>Current Problems Are<br>No Longer Active</p>
+	<p id="timeRemaining"><span id="time"></span> Until Current Problems Are No Longer Active</p>
 	<ol>
 		<li><a  target="_blank"href="./Level1Problems.html">Level 1 Problems</a></li>
 		<li><a  target="_blank"href="./Level2Problems.html">Level 2 Problems</a></li>
 		<li><a  target="_blank"href="./Level3Problems.html">Level 3 Problems</a></li>
 	</ol>
+	<!--past problems-->
 	<h2 id="past">Past Problems</h2>
 	<ol>
-		<li>There are currently no past problems</li>
+		<li><a target="_blank" href="./PastProblems.html">Past Problems</a></li>
 	</ol>
 
-	<!--image-->
+	<!--minion image-->
 	<img src="./minion.png" id="minion">
 
+	<!--about-->
 	<h2 id="about-title">About</h2>
 	<div id="about-text">
 	<p>This website is a website made by Benjamin Taycher. Benjamin Taycher is a 12 year old male human being.
@@ -101,6 +110,7 @@
 	that were made on desmos. Benjamin has been interested in learning about different programming languages for a lot of his life but had not been able to easily show other
 	people his work unless he got them to physically come over to his computer to look at the program and/or what the program did when it was run.</p>
 	</div>
+	<!--points system overview-->
 	<h2 class="points">Points</h2>
 	<p class="points">There will be points awarded to people who got the right answer and there may be points that are awarded to people who
 	did not get the problem correctly but submitted a solution which was partially correct. There will be a leaderboard.
@@ -108,8 +118,10 @@
 	but they will still be worth an amount of points which may help you go up the leaderboard or at least not go down to the very bottom if you
 	do not do the problems in one of the week. The level 1 problems are worth 5 points in the week that they are the current probems,
 	the level 2 problems are worth 7, and the level 3 problems are worth 9 points.</p>
+
+	<!--the script that is behind the time thing-->
 	<script>
-		var timeEnd = new Date(2020, 4, 24, 0, 0, 0, 0);
+		var timeEnd = new Date(2020, 4, 31, 0, 0, 0, 0);
 		timeEnd = timeEnd.getTime();
 		var timeEl = document.getElementById("time");
 		setInterval(updateTime, 1000)
