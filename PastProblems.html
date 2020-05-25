@@ -6,6 +6,10 @@
     <title>Past Problems</title>
 	<style>
 		.title{
+			color:rgb(150,0,0);
+		}
+
+		.subtitle{
 			color:gold;
 		}
 
@@ -22,10 +26,16 @@
 			color:green;
 		}
 
-		#desmos-graph{
+		#desmos-graph1{
 			position:absolute;
-			left:1100px;
+			left:1050px;
 			top:20px;
+		}
+
+		#desmos-graph2{
+			position:absolute;
+			left:920px;
+			top:1170px;
 		}
 	</style>
 </head>
@@ -33,19 +43,19 @@
 	<h1 class="title">Past Problems</h1>
 
 	<!--level 1 past problems-->
-	<h2 class="title">Past Level 1 Problems</h2>
+	<h2 class="subtitle">Past Level 1 Problems</h2>
 	<h3>Math</h3>
 	<p>Find the answer to 3x + 5 = 74.</p>
 
 	<h3>Desmos Art</h3>
 	<p>Draw the same thing as there is in the image on the right, using equations on <a target="_blank" href="https://www.desmos.com/calculator">Desmos</a>.</p>
-	<img src="./level1desmosart.png" id="desmos-graph" height="600">
+	<img src="./level1desmosart.png" id="desmos-graph1" height="600">
 
 	<h3>Computer Science</h3>
 	<p>Make a python program that draws a square using python turtle.</p>
 
 	<!--level 2 past problems-->
-	<h2 class="title">Current Level 2 Problems</h2>
+	<h2 class="subtitle">Past Level 2 Problems</h2>
 
 	<h3>Math</h3>
 	<p>Bob has a triangle with a right angle where one leg is of length 3, another is of length 8. How long is the hypotenuse?</p>
@@ -55,5 +65,21 @@
 
 	<h3>Computer Science</h3>
 	<p>Make a python program that takes as input an integer and then draws a shape with that many corners.</p>
+
+	<!--level 3 ast problems-->
+	<h2 class="subtitle">Past Level 3 Problems</h2>
+
+	<h3>Math</h3>
+	<p>What is the area that is unshaded within a 4 by 4 square that is at the origin<br>if there are five shaded circles in it. One circle with radius 1 in each of the<br>4
+	quadrants and one that is centered at the origin and is the largest size that<br>it can be without overlaping with the four other circles?</p>
+
+	<h3>Desmos Art</h3>
+	<p>Make a graph of the YouTube logo (graph without equations shown on the<br>right) on <a target="_blank" href="https://www.desmos.com/calculator">Desmos</a>.</p>
+	<img src="./youtubelogo.png" id="desmos-graph2" height="600">
+
+	<h3>Computer Science</h3>
+	<p>Make a program on python which takes as input a string of digits (or other symbols which the program will ignore).
+	The program should then go to a specific point for each of the different digits (the specific point for each digit should not be the same point).
+	The program should work for <strong>base 10 numbers</strong> but there may be extra credit awarded for working in other bases and taking the bases as input.</p>
 </body>
 </html>
