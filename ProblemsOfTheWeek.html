@@ -23,7 +23,7 @@
 		}
 
 		#title{
-			color:gold;
+			/*color:gold;*/
 		}
 
 		body{
@@ -124,7 +124,7 @@
 		var timeEnd = new Date(2020, 4, 31, 0, 0, 0, 0);
 		timeEnd = timeEnd.getTime();
 		var timeEl = document.getElementById("time");
-		setInterval(updateTime, 1000)
+		setInterval(updateTime, 1000);
 
 		function updateTime()
 		{
@@ -150,6 +150,39 @@
 				var timeMinutes = Math.floor(timeRemaining/60000);
 				var timeSeconds = Math.round((timeRemaining - timeMinutes * 60000)/1000);
 				timeEl.innerHTML = timeMinutes + " Minutes " + timeSeconds + " Seconds";
+			}
+		}
+
+		var titleBlue = 255;
+		var titleGreen = 0;
+		var moreGreen = true;
+		var titleEl = document.getElementById("title")
+		setInterval(updateTitleColor, 10);
+
+		function updateTitleColor()
+		{
+			if (moreGreen)
+			{
+				titleBlue -= 1;
+				titleGreen += 1;
+				titleEl.style.color = `rgb(0, ${titleGreen}, ${titleBlue})`;
+
+				if (titleBlue === 0)
+				{
+					moreGreen = false;
+				}
+			}
+
+			else
+			{
+				titleBlue += 1;
+				titleGreen -= 1;
+				titleEl.style.color = `rgb(0, ${titleGreen}, ${titleBlue})`;
+
+				if (titleGreen === 0)
+				{
+					moreGreen = true;
+				}
 			}
 		}
 	</script>
