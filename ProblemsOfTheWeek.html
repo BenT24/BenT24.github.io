@@ -64,13 +64,18 @@
 			overflow-x:hidden;
 		}
 
+		#announcement{
+			width:350px;
+			overflow-x:hidden;
+		}
+
 	</style>
 </head>
 <body>
 	<!--title-->
 	<h1 id="title">Problems Of The Week</h1>
 	<!--announcement-->
-	<h2>I have posted the problems from week 3 really late so you have the week that goes from 6/7/2020 to 6/13/2020 to solve the problems from both weeks. The problems from week 3 will be worth half
+	<h2 id="announcement>I have posted the problems from week 3 really late so you have the week that goes from 6/7/2020 to 6/13/2020 to solve the problems from both weeks. The problems from week 3 will be worth half
 	of their normal points because that is what they would be worth by week 4.<h2>
 	
 	<!--contents-->
@@ -125,7 +130,7 @@
 
 	<!--the script that is behind the time thing-->
 	<script>
-		var timeEnd = new Date(2020, 4, 31, 0, 0, 0, 0);
+		var timeEnd = new Date(2020, 5, 13, 0, 0, 0, 0);
 		timeEnd = timeEnd.getTime();
 		var timeEl = document.getElementById("time");
 		setInterval(updateTime, 1000);
