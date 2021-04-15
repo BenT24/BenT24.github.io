@@ -1,0 +1,31 @@
+﻿body
+{
+	background-color: rgb(40, 40, 40);
+	color: white;
+	margin: 25px;
+}
+
+.choice
+{
+	background-color: rgb(60, 60, 60);
+	margin-top: 4px;
+	margin-bottom: 4px;
+	padding-left: 4px;
+}
+
+
+
+.info
+{
+	background-color: rgb(60, 60, 60);
+	position: fixed;
+	top: 0;
+	right: 25px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 4px;
+	padding-right: 4px;
+	overflow: auto;
+	width: 400px;
+	height: 100%;
+}
