@@ -18,6 +18,6 @@ let noun2 = nouns[Math.floor(Math.random()*nouns.length)];
 let verb1 = verbs[Math.floor(Math.random()*verbs.length)];
 let preposition1 = prepositions[Math.floor(Math.random()*prepositions.length)];
 
-let ret = "Always" + verb1 + "the" + noun1 + preposition1 + "a" + noun2;
+let ret = "Always " + verb1 + " the " + noun1 + " " + preposition1 + " a " + noun2;
 
 document.getElementById("rule").innerHTML = ret;
