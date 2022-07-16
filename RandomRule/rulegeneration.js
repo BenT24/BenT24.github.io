@@ -49,8 +49,9 @@ function determineRule(){
         return "Never " + generateVerb() + " when a " + generateNoun() + " is near";
     }
     if (rand == 2){
-        return "Only " + generateVerb() + " " + generatePreposition() + " a " + generateNoun() + " if there is a " + generateNoun() + " in the area"
+        return "Only " + generateVerb() + " " + generatePreposition() + " a " + generateNoun() + " if there is a " + generateNoun() + " in the area";
     }
+    return "Null";
 }
 
 // let noun1 = nouns[Math.floor(Math.random()*nouns.length)];
